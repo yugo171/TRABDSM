@@ -1,110 +1,135 @@
-*{
-    padding: 0; 
+/* fontes */
+@font-face {
+    font-family: "fonte1";
+    src: url('fontes/Gampolins\demo.otf');
+}
+@font-face {
+    font-family: "fonte2";
+    src: url("fontes/Awesome.otf");
+}
+@font-face {
+    font-family: "fonte3";
+    src: url('fontes/Super\Cottage.ttf');
+}
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lobster&family=Roboto:wght@300&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
+    background-image: url('imagem/body1.jpg');
     background-color: #333;
+    font-family: Arial, sans-serif;
+    color: white;
 }
+
 #container {
-    background-color: rgb(38, 45, 139);
     text-align: center;
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main {
+    margin-top: 70px;       
+}
+
+img {
     width: 50%;
-    margin-left: 5%;
-    margin-right: 25%;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    border-radius: 2%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-main{
-    margin-top: 70px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.imagem1{
-    width: 75%;
-    padding:2%;
+    padding: 2%;
     height: 12rem;
-
-}
-.imagem2{
-    width: 75%;
-    padding:2%;
-    height: 12rem;
-
-}
-.imagem3{
-    width: 75%;
-    padding:2%;
-    height: 12rem;
-
-}
-.imagem4{
-    width: 75%;
-    padding:2%;
-    height: 12rem;
-
+    border-radius: 5px;
 }
 
-/* nav superior */
-nav.superior{
-    position:fixed;
+/* Nav superior */
+nav.superior {
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
     height: 60px;
     background: #333;
-    top:0;
-    width:100%;
+    top: 0;
+    width: 100%;
     left: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'fonte3', sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-nav.superior ul{
+nav.superior ul {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     list-style: none;
-    padding: 0;
-    list-style-type: none;
-    background-color:#333
 }
 
 nav.superior ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
 }
 
-/* nav lateral */
+nav.superior ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
 
+/* Nav lateral */
 nav.lateral {
-display: flex;
-justify-content: space-between;
-align-items: center;
-box-sizing: border-box;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'lobster', cursive;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 150px;
+    height: 100vh;
+    background: #5a5757;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
 }
 
-ul.lateral{
-    float: left;
+nav.lateral ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    background-color: rgb(121, 121, 121)
-}
-nav.lateral li a{
-    display: block;
-    color:black;
-    padding: 8px 16px;
-    text-decoration: none;
 }
 
-nav.lateral li a:hover{
-    background-color:grey;
-    color:white;
-    text-indent:10px;
+nav.lateral li a {
+    display: block;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav.lateral li a:hover {
+    background-color: #333;
+    color: white;
+    padding-left: 25px;
 }
 
 nav.lateral .active {
     background-color: steelblue;
     color: white;
+}
+h1 {
+    font-family: 'Roboto Condensed';
+    color: black;
+    font-size: 50px;
+
+}
+::selection {
+    font-family: 'Roboto Condensed';
+    color: black; 
+}
+p {
+    margin: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
 }
