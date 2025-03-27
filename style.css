@@ -54,7 +54,7 @@ nav.superior {
     align-items: center;
     font-size: 30px;
     height: 60px;
-    background: #333;
+    background: rgba(51, 51, 51, 0.8); /* Um fundo cinza escuro com 80% de opacidade */
     top: 0;
     width: 100%;
     left: 0;
@@ -89,7 +89,7 @@ nav.lateral {
     left: 0;
     width: 150px;
     height: 100vh;
-    background: #5a5757;
+    background: rgba(90, 87, 87, 0.9); /* Um fundo cinza acinzentado com 90% de opacidade */
     display: flex;
     flex-direction: column;
     padding-top: 20px;
