@@ -133,3 +133,31 @@ p {
     font-family: 'Roboto Condensed', sans-serif;
     color: black;
 }
+/* tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: black;
+    font-family: fonte1,sans-serif;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover {
+    background-color: #D3d3d3;
+}
+thead.topo1{
+border-bottom: solid#333 2px;
+}
+thead{
+    border:solid #333 1.7px;
+}
